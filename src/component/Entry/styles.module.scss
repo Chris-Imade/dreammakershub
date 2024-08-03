@@ -1,0 +1,28 @@
+.entry {
+	margin-top: 80px;
+	h3 {
+		font-size: 40px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+		color: #1C1C1C;
+	}
+	h5 {
+		font-size: 25px;
+		font-weight: 600;
+	}
+	ul {
+		max-width: 20rem;
+		li {
+			display: flex;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			align-items: center;
+			hr {
+				width: 70%;
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+section.container {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    width: 100vw;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        text-transform: uppercase;
+        color: #9ac93d;
+        margin-bottom: 14px;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+      }
+      h2 {
+        font-size: 29px;
+        color: #000000;
+        font-weight: 500;
+        margin-bottom: 16px;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  
+    .quote {
+      .carouselWrapper {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+  
+        .quoteTest {
+          width: 100%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+  
+          &.active {
+            display: flex;
+          }
+  
+          p {
+            font-size: 22px;
+            font-family: "Poppins", sans-serif;
+            color: black;
+            font-weight: 400;
+            text-align: center;
+            width: 655px;
+
+            @media (max-width: 1024px) {
+              width: auto;
+              margin: 0px 20px;
+            }
+          }
+          img {
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            background-origin: content-box;
+            margin-top: 21px;
+          }
+          h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: "Poppins", sans-serif;
+            color: #000000;
+          }
+          span {
+            font-size: 11px;
+            font-family: "Poppins", sans-serif;
+            color: #6A6A6A;
+          }
+        }
+      }
+  
+      .dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin-top: -1rem;
+        transform: rotate(270deg);
+        .dotsContainer {
+          width: 21px;
+          height: 21px;
+          background-color: #9ac93d;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 2.5px;
+          .dot {
+            width: 13px;
+            height: 13px;
+            border: 2px solid #ffffff;
+            background-color: #9ac93d;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            &.activeDot {
+              background-color: #000000;
+            }
+          }
+        }
+      }      
+    }
+  }  

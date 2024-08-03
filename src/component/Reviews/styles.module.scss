@@ -1,0 +1,46 @@
+.card {
+  width: 398px;
+  stroke: 1px;
+  stroke: rgba(51, 71, 176, 32%);
+  padding: 24px;
+  border: 1px solid rgba(51, 71, 176, 32%);
+  box-shadow: 0px 1.41px 15.52px 0px rgba(0, 0, 0, 8%);
+  border-radius: 10px;
+  margin-right: 20px;
+
+  div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    // image
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 16px;
+      width: 100%;
+
+      h1.nameOfReviewer {
+        font-size: 20px !important;
+        font-weight: bold;
+      }
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -0.1rem;
+        h5 {
+          color: rgba(28, 28, 28, 60%);
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  p {
+    color: #1c1c1c;
+    font-size: 16px;
+    margin-top: 18px;
+  }
+}

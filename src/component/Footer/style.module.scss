@@ -1,0 +1,126 @@
+@import "../../app/variables.module.scss";
+
+.footerContainer {
+  width: 100vw;
+  background-color: $footer-bg;
+  .footerLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 91px 46px;
+
+    @media (max-width: 945px) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    div {
+      @media (max-width: 945px) {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h2 {
+        color: $active-color;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 17%;
+      }
+      .linksRow {
+        display: flex;
+        align-items: center;
+        img {
+          width: 14px;
+          height: 14px;
+          margin-right: 7px;
+
+          @media (max-width: 945px) {
+            display: none;
+          }
+        }
+        p {
+          color: white;
+          font-size: 11px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 200;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .coursesLinksRow {
+        display: flex;
+        img {
+          height: 9px;
+          width: 7px;
+          margin-right: 7px;
+
+          @media (max-width: 945px) {
+            display: none;
+          }
+        }
+        p {
+          color: white;
+          font-size: 11px;
+          font-family: "Poppins", sans-serif;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .newsLetter {
+      p {
+        width: 477px;
+        font-size: 14px;
+        color: white;
+        font-weight: 200;
+
+        @media (max-width: 945px) {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    display: flex;
+    padding: 33px 46px;
+    border-top: 1px solid rgba(255, 255, 255, 6%);
+    justify-content: space-between;
+
+    @media (max-width: 945px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      color: $active-color;
+      font-size: 14px;
+      font-weight: 500;
+
+      @media (max-width: 945px) {
+        text-align: center;
+      }
+      span {
+        color: white;
+      }
+    }
+    ul {
+      display: flex;
+
+      @media (max-width: 945px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      li {
+        margin-left: 1.5rem;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

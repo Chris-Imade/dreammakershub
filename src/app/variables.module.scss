@@ -1,0 +1,18 @@
+// variables.module.scss
+$primary-text: 17px;
+$secondary-text: 11px;
+$stroke: #f1f1f1;
+$active-color: #9ac93d;
+$text-gray: #6D6B7E;
+$number-txt-color: #4A4848;
+$footer-bg: #171615;
+
+:export {
+  primaryText: $primary-text;
+  secondaryText: $secondary-text;
+  stroke: $stroke;
+  activeColor: $active-color;
+  textGray: $text-gray;
+  numberTxtColor: $number-txt-color;
+  footerBg: $footer-bg;
+}

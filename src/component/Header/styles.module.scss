@@ -1,0 +1,110 @@
+.imageContainer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.imageWrapper {
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+  flex-shrink: 0;
+  
+  .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    .quoteSection {
+      background-image: url("../../../public/images/box-line.png");
+      object-fit: contain;
+      width: 692px;
+      height: 273px;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      @media (max-width: 425px) {
+        background-image: none;
+      }
+      p {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        text-transform: capitalize;
+        color: white;
+      }
+      button {
+        color: #fff;
+        font-size: 22px;
+        background-color: #9ac93d;
+        box-shadow: -5px 5px 0px #5f7d23;
+        width: 174.45px;
+        height: 49.3px;
+        margin-top: 66px;
+        position: absolute;
+        left: 10px;
+        bottom: 5px;
+      }
+    }
+  }
+}
+
+.images {
+  object-fit: cover !important;
+  width: 100vw;
+  height: 100vh !important;
+}
+
+.mobile {
+  background-image: url("../../../public/images/slides/class2.png");
+  object-fit: cover;
+  background-position: center center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    text-align: center;
+    width: 80vw;
+    font-size: 24px;
+    font-weight: 500;
+    height: 25%;
+  }
+
+  button {
+    color: #fff;
+    font-size: 22px;
+    background-color: #9ac93d;
+    box-shadow: -5px 5px 0px #5f7d23;
+    width: 174.45px;
+    height: 49.3px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}

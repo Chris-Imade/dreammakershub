@@ -1,0 +1,138 @@
+// Variables
+@import "../../app/variables.module.scss";
+
+.nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  .firstRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83.74px;
+    padding: 14px 52px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: $stroke;
+    div {
+      display: flex;
+      // socials - block
+      div {
+        display: flex;
+        align-items: center;
+        // inner double text
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 10px;
+          // heading text within double text
+          h2 {
+            font-size: $primary-text;
+            font-weight: 700;
+          }
+          p {
+            font-size: $secondary-text;
+          }
+        }
+      }
+    }
+  }
+  .secondRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 52px;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: $stroke;
+    .call {
+      display: flex;
+      align-items: center;
+      h2 {
+        font-weight: 700;
+        font-size: $primary-text;
+        color: $number-txt-color;
+      }
+    }
+    div {
+      p {
+        color: $number-txt-color;
+        font-size: 14px;
+      }
+    }
+  }
+  .thirdRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 52px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    // transform: translateY(-100%);
+    div.left {
+      display: flex;
+      align-items: center;
+      button {
+        background-color: #f2f1f8;
+        width: 276.76px;
+        height: 61.33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 27px;
+        div {
+          display: flex;
+          img {
+            margin-right: 16px;
+          }
+          p {
+            font-size: 19px;
+            font-weight: 600;
+            color: $active-color;
+          }
+        }
+      }
+      // menu container
+      div {
+        margin-left: 40px;
+        ul {
+          display: flex;
+          align-items: center;
+          li {
+            transition: all 500ms ease-out;
+            margin-right: 20px;
+
+            a {
+              font-size: 16px;
+              font-weight: 600;
+              color: $text-gray;
+              &:hover {
+                cursor: pointer;
+                color: $active-color;
+              }
+              &:active {
+                color: $active-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    button {
+      background-color: $active-color;
+      color: white;
+      font-size: 19px;
+      font-weight: 600;
+      width: 108.5px;
+      height: 39.31px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
