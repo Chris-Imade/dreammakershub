@@ -66,21 +66,21 @@ const Header: React.FC = () => {
 
   const slides: Slide[] = [
     {
-      image: images.slides.first_slide,
+      image: '/images/slides/class1.png',
       sub_text: "From world-class tutors",
       quote1: "Learn at your own pace, anywhere.",
       quote2: "Access education anytime, anywhere.",
       quote3: "Flexible learning, any day.",
     },
     {
-      image: images.slides.second_slide,
+      image: '/images/slides/class2.png',
       sub_text: "Globally recognized certificates",
       quote1: "Gain skills while working with us.",
       quote2: "Teaching and learning build solid understanding.",
       quote3: "Master your subject by applying what you learn.",
     },
     {
-      image: images.slides.third_slide,
+      image: '/images/slides/class3.png',
       sub_text: "Get connected while you learn",
       quote1: "Meet diverse, great minds.",
       quote2: "Experience global connectivity.",
@@ -114,7 +114,6 @@ const Header: React.FC = () => {
                 className={styles.images}
                 src={slide.image}
                 alt="slider image"
-                placeholder="blur"
                 layout="fill"
                 sizes="100vw"
                 priority={i === 0}

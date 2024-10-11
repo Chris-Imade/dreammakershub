@@ -21,10 +21,10 @@ export default function RootLayout({
         <div className="mobile-nav">
           <MobileNav />
         </div>
-		<Nav />
-		<ThirdRow />
+        <Nav />
+        <ThirdRow />
         {children}
-		<Footer />
+        <Footer />
       </body>
     </html>
   );

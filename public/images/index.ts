@@ -14,6 +14,7 @@ export const images = {
     carol: require("./team/carol.jpg"),
     tracy: require("./team/tracy.jpeg"),
     dio: require("./team/dio.jpeg"),
+    dave: require("./team/dave.jpg")
   },
   detailsBg: require("./details-bg.png"),
   review1: require("./review1.png"),

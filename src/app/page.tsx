@@ -84,23 +84,25 @@ const Home: React.FC = () => {
   }, [lenis]);
 
   return (
-    <ReactLenis root>
-      <AnimatePresence mode="wait">{isLoading && <Loader />}</AnimatePresence>
-      <div id="container">
-        <Header />
-        <About />
-        <Subjects />
-        <Courses />
-        <Team />
-        <QuickAction />
-        <Testimonial />
-      </div>
+    <div>
+      <ReactLenis root>
+        <AnimatePresence mode="wait">{isLoading && <Loader />}</AnimatePresence>
+        <div id="container">
+          <Header />
+          <About />
+          <Subjects />
+          <Courses />
+          <Team />
+          <QuickAction />
+          <Testimonial />
+        </div>
 
-      <Script
-        async
-        src="https://api.cronbot.ai/v1/widgets/app/app_2nva9whyxtya"
-      />
-    </ReactLenis>
+        <Script
+          async
+          src="https://api.cronbot.ai/v1/widgets/app/app_2nva9whyxtya"
+        />
+      </ReactLenis>
+    </div>
   );
 };
 

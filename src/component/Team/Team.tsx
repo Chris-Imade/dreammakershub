@@ -19,13 +19,18 @@ const Team: React.FC = () => {
 				</div>
 				<div className={styles.teamMember}>
 					<Image src={images.teams.dio} width={200} height={200} alt={'CEO Dave'} />
-					<h3>Dave</h3>
-					<p>C.E.O</p>
+					<h3>David Ikhu-Omoregbe</h3>
+					<p>Chief Executive Officer</p>
 				</div>
 				<div className={styles.teamMember}>
 					<Image src={images.teams.tracy} width={200} height={200} alt={'Team member Tracy'} />
 					<h3>Tracy Agbonghile</h3>
 					<p>Head Faculty</p>
+				</div>
+				<div className={styles.teamMember}>
+					<Image src={images.teams.dave} width={200} height={200} alt={'Team member Tracy'} />
+					<h3>David Obanubi</h3>
+					<p>Director of Statistics</p>
 				</div>
 			</div>
 		</div>

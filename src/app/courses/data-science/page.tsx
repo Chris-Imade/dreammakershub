@@ -5,7 +5,12 @@ import styles from "./page.module.scss";
 import Link from "next/link";
 import { icons } from "../../../../public/icons";
 import Image from "next/image";
-import { Curriculum, Entry, Fees, Reviews } from "@/component";
+import dynamic from 'next/dynamic';
+
+const Curriculum = dynamic(() => import('@/component/Curriculum/Index'), { ssr: false });
+const Entry = dynamic(() => import('@/component/Entry/Index'), { ssr: false });
+const Fees = dynamic(() => import('@/component/Fees/Index'), { ssr: false });
+const Reviews = dynamic(() => import('@/component/Reviews/Index'), { ssr: false });
 
 const reviewsData = [
   {
@@ -185,7 +190,7 @@ const Index: React.FC = () => {
           around the world, equips participants to navigate the evolving data
           landscape with confidence. Through hands-on exploration of diverse
           real-world datasets, students develop a versatile skillset crucial for
-          effective data analysis and strategic decision-making in today's
+          effective data analysis and strategic decision-making in today&apos;s
           data-driven environment.
         </p>
 
