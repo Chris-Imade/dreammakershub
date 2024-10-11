@@ -30,7 +30,7 @@ const Team: React.FC = () => {
 				<div className={styles.teamMember}>
 					<Image src={images.teams.dave} width={200} height={200} alt={'Team member Tracy'} />
 					<h3>David Obanubi</h3>
-					<p>Director of Statistics</p>
+					<p>Consultant Analytics and Statistics</p>
 				</div>
 			</div>
 		</div>
