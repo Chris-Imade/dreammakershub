@@ -87,7 +87,7 @@ const Home: React.FC = () => {
     <div>
       <ReactLenis root>
         <AnimatePresence mode="wait">{isLoading && <Loader />}</AnimatePresence>
-        <div id="container">
+        <div id="container" className="w-[100vw]">
           <Header />
           <About />
           <Subjects />

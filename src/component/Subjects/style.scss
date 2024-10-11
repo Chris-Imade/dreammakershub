@@ -7,8 +7,9 @@
     rgba(97, 188, 195, 1) 68%,
     rgba(23, 88, 140, 1) 100%
   );
-  margin-left: -5vw;
-  margin-right: -5vw;
+  overflow-x: hidden;
+  width: 100vw !important;
+  padding-bottom: 100px;
 }
 
 .gallery-counter {
@@ -42,8 +43,8 @@
 
   padding-top: 20vh;
   padding-bottom: 5vh;
-  width: 400%;
-  overflow: scroll;
+  width: 100vw !important;
+  overflow: hidden;
   display: flex;
   flex-wrap: nowrap;
 
@@ -56,7 +57,7 @@
 
   .gallery-item-info {
     position: absolute;
-    bottom: 10%;
+    bottom: 25%;
     z-index: 1;
     // I can adjust the translate property to move the text
     transform: translateX(-20%);
@@ -110,6 +111,14 @@
         filter: brightness(90%);
       }
     }
+    @media (min-width: 769px) {
+      grid-template-columns: 20vw 1fr 1vw; /* Narrower side padding */
+      height: 93vh; /* Full height */
+    }
+    @media (max-width: 570px) {
+      grid-template-columns: 15vw 1fr 15vw; /* Adjust spacing for mobile */
+      height: 70vh; /* Set height to 70% of the viewport height on mobile */
+    }
   }
   .gallery-item-image {
     background-size: cover;
@@ -123,7 +132,8 @@
     filter: grayscale(100%) sepia(20%) brightness(80%);
 
     @media (max-width: 570px) {
-      width: 75vw;
+      width: 70vw; /* Make the image 70% of the screen width */
+      height: 100%; /* Adjust height to maintain aspect ratio */
     }
   }
 }
