@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "https://dreammakershub.pages.dev/", // Replace with your actual URL
     images: [
       {
-        url: "https://firebasestorage.googleapis.com/v0/b/dream-makers-hub.appspot.com/o/Screenshot%202024-10-12%20at%201.13.11%20AM.png?alt=media&token=afe9cfae-f5c6-44e4-8bc1-f5398b00f5a6",
+        url: "https://res.cloudinary.com/dtj0krpma/image/upload/v1728693752/Screenshot_2024-10-12_at_1.13.11_AM_qxbxj7.png",
         width: 1200,
         height: 630,
         alt: "Dream Makers Hub Open Graph Image", // Image alt text
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Dream Makers Hub | DMH",
     description: "Bringing Education to the world",
     images: [
-      "https://firebasestorage.googleapis.com/v0/b/dream-makers-hub.appspot.com/o/Screenshot%202024-10-12%20at%201.13.11%20AM.png?alt=media&token=afe9cfae-f5c6-44e4-8bc1-f5398b00f5a6",
+      "https://res.cloudinary.com/dtj0krpma/image/upload/v1728693752/Screenshot_2024-10-12_at_1.13.11_AM_qxbxj7.png",
     ],
   },
 };
